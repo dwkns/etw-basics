@@ -1,6 +1,4 @@
-
 import logToConsole from 'eleventy-plugin-console-plus'
-import pluginWebc from "@11ty/eleventy-plugin-webc";
 
 export default (eleventyConfig) => {
 
