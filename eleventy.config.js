@@ -1,15 +1,23 @@
 import { execSync } from 'child_process'
 import logToConsole from 'eleventy-plugin-console-plus'
 
+export const tailwindcss = (eleventyConfig, options) => {
+  eleventyConfig.addWatchTarget(options.input);
+  eleventyConfig.on("eleventy.after", () => {
+    execSync(
+      `npx @tailwindcss/cli -i ${options.input} -o ${options.output}`
+    );
+  });
+  eleventyConfig.setServerOptions({
+    watch: [options.output]
+  })
+}
 export default (eleventyConfig) => {
   eleventyConfig.addPlugin(logToConsole, {});
-
-  eleventyConfig.on("eleventy.after", () => {
-    execSync(`npx @tailwindcss/cli -i src/styles/tailwind.css -o dist/main.css`);
+  eleventyConfig.addPlugin(tailwindcss, {
+    input: 'src/css/tailwind.css',
+    output: 'dist/styles.css'
   });
-
-  eleventyConfig.setServerOptions({ watch: ["dist/main.css"] });
-  eleventyConfig.addWatchTarget("src/styles/tailwind.css");
 };
 
 export const config = {

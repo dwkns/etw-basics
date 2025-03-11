@@ -13,8 +13,8 @@
   "type": "module",
   "scripts": {
     "clean": "npx rimraf dist build",
-    "dev": "npm run clean && eleventy --serve --quiet",
-    "build": "npm run clean && eleventy --serve --quiet"
+    "dev": "npm run clean && eleventy --serve",
+    "build": "npm run clean && eleventy --serve"
   },
-  "author": "dazza"
+  "author": "dwkns"
 }

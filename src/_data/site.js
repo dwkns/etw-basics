@@ -1,2 +1,2 @@
-const name = "The Sites Name"
+const name = "The Site Name"
 export default { name }
