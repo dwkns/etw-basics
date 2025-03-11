@@ -1,5 +1,6 @@
 import { execSync } from 'child_process'
 import logToConsole from 'eleventy-plugin-console-plus'
+console.log("process.env : ", process.env.NODE )
 
 export const tailwindcss = (eleventyConfig, options) => {
   eleventyConfig.addWatchTarget(options.input);

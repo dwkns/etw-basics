@@ -1,14 +1,15 @@
 {
-  "name": "etw-basics-starter",
+  "name": "etw-basics",
   "version": "0.0.2",
   "main": "index.js",
   "license": "MIT",
   "dependencies": {
     "@11ty/eleventy": "^3.0.0",
     "@tailwindcss/cli": "^4.0.10",
+    "dotenv": "^16.4.7",
+    "eleventy-plugin-console-plus": "^0.1.1",
     "rimraf": "^6.0.1",
-    "tailwindcss": "^4.0.10",
-    "eleventy-plugin-console-plus": "^0.1.1"
+    "tailwindcss": "^4.0.10"
   },
   "type": "module",
   "scripts": {
