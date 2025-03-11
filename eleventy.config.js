@@ -18,4 +18,4 @@ export const config = {
     layouts: '_partials/_layouts',
     data: '_data'
   },
-}; 
+};
