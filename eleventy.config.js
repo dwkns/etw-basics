@@ -4,8 +4,8 @@ import tailwindcss from 'eleventy-plugin-tailwindcss-4'
 export default (eleventyConfig) => {
   eleventyConfig.addPlugin(logToConsole, {});
   eleventyConfig.addPlugin(tailwindcss, {
-    input: './src/css/tailwind.css',
-    output:'./dist/styles.css'
+    input: 'css/tailwind.css',
+    output:'styles.css'
   });
 };
 
