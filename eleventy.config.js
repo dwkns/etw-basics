@@ -1,12 +1,15 @@
 import logToConsole from 'eleventy-plugin-console-plus'
-import tailwindcss from 'eleventy-plugin-tailwindcss-4'
+import EleventyVitePlugin from "@11ty/eleventy-plugin-vite";
+import tailwindcss from '@tailwindcss/vite'
 
 export default (eleventyConfig) => {
   eleventyConfig.addPlugin(logToConsole, {});
-  eleventyConfig.addPlugin(tailwindcss, {
-    input: 'css/tailwind.css',
-    output:'styles.css'
+  eleventyConfig.addPassthroughCopy({ "src/css/tailwind.css": "styles.css" });
+
+  eleventyConfig.addPlugin(EleventyVitePlugin, {
+    viteOptions: { plugins: [tailwindcss()] }
   });
+
 };
 
 export const config = {
