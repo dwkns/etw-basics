@@ -4,7 +4,8 @@ import tailwindcss from '@tailwindcss/vite'
 
 export default (eleventyConfig) => {
   eleventyConfig.addPlugin(logToConsole, {});
-  eleventyConfig.addPassthroughCopy({ "src/css/tailwind.css": "styles.css" });
+  eleventyConfig.addPassthroughCopy({ "src/css/tailwind.css": "/css/styles.css" });
+  eleventyConfig.addPassthroughCopy({"src/js/**/*.js":"/js/"})
 
   eleventyConfig.addPlugin(EleventyVitePlugin, {
     viteOptions: { plugins: [tailwindcss()] }
