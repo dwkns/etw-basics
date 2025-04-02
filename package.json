@@ -6,7 +6,7 @@
   "dependencies": {
     "@11ty/eleventy": "^3.0.0",
     "@11ty/eleventy-plugin-vite": "^6.0.0",
-    "@dwkns/theultimatequestion": "^1.0.0",
+    "@dwkns/the-ultimate-question": "^0.0.1",
     "@tailwindcss/vite": "^4.0.14",
     "eleventy-plugin-console-plus": "^0.1.1",
     "rimraf": "^6.0.1",
