@@ -3,19 +3,19 @@
 ## Installation 
 Install dependecies
 ```bash
-$ yarn install 
+$ npm install
 ```
 ## Development
 Start the Development Server
 ```bash
-$ yarn dev
+$ npm run dev
 ```
 
 ## Build 
 Build the site
 
 ```bash
-$ yarn build
+$ npm run build
 ```
 Serve the static build (useful for local testing)
 ```bash

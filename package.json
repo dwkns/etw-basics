@@ -5,7 +5,7 @@
   "license": "MIT",
   "dependencies": {
     "@11ty/eleventy": "^3.1.0",
-    "@dwkns/the-ultimate-question": "^0.0.1",
+    "@dwkns/the-ultimate-question": "^0.0.2",
     "eleventy-plugin-console-plus": "^0.1.1",
     "eleventy-plugin-tailwindcss-4": "^2.0.0",
     "rimraf": "^6.0.1"
